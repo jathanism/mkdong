@@ -1,0 +1,39 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Makes dongs.
+"""
+
+__author__ = 'Jathan McCollum, Mark Ellzey Thomas'
+__maintainer__ = 'Jathan McCollum'
+__email__ = 'jathan@gmail.com'
+__copyright__ = '2009-2013, Jathan McCollum'
+__version__ = '3.0'
+
+import os
+import sys
+
+MAXLEN = 40
+
+def mkdong(length):
+    """Pring a dong of ``length`` length."""
+    if donglen > MAXLEN:
+        sys.exit('warning: a %s" dong is too big! cannot be longer than %s"!' %
+                (donglen, maxlen))
+    else:
+        dong = '( )/( )'
+        for i in range(donglen):
+            dong += '/'
+        dong += 'D'
+
+    return dong
+
+if __name__ == '__main__':
+    try:
+        donglen = int(sys.argv[1])
+    except:
+        sys.exit("usage: mkdong <length>")
+    else:
+        dong = mkdong(donglen)
+    os.system('echo "%s"' % dong)
