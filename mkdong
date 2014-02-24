@@ -20,7 +20,7 @@ def mkdong(length):
     """Pring a dong of ``length`` length."""
     if donglen > MAXLEN:
         sys.exit('warning: a %s" dong is too big! cannot be longer than %s"!' %
-                (donglen, maxlen))
+                (donglen, MAXLEN))
     else:
         dong = '( )/( )'
         for i in range(donglen):
