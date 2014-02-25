@@ -9,7 +9,7 @@ __author__ = 'Jathan McCollum, Mark Ellzey Thomas'
 __maintainer__ = 'Jathan McCollum'
 __email__ = 'jathan@gmail.com'
 __copyright__ = '2009-2013, Jathan McCollum'
-__version__ = '3.0'
+__version__ = '5.0'
 
 import os
 import sys
@@ -20,7 +20,7 @@ def mkdong(length):
     """Pring a dong of ``length`` length."""
     if donglen > MAXLEN:
         sys.exit('warning: a %s" dong is too big! cannot be longer than %s"!' %
-                (donglen, maxlen))
+                (donglen, MAXLEN))
     else:
         dong = '( )/( )'
         for i in range(donglen):
