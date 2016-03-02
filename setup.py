@@ -10,6 +10,8 @@ except ImportError:
     from distutils.core import setup
 
 
+execfile('mkdong/version.py')
+
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
     sys.exit()
@@ -21,7 +23,7 @@ packages = [
 requires = []
 
 
-with open('README.md') as f:
+with open('README.rst') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
@@ -30,7 +32,7 @@ with open('LICENSE') as f:
 
 setup(
     name='mkdong',
-    version='6.1',
+    version=__version__,
     description='A CLI utility to print dongs.',
     long_description=readme + '\n\n',
     author='Jathan McCollum, Clint Fralick',

@@ -1,5 +1,5 @@
 import unittest
-from mkdong.mkdong import mkdong, MAXLEN
+from mkdong.core import mkdong, MAXLEN
 from argparse import ArgumentError
 
 

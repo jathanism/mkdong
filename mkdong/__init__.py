@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 """
-cli utility that makes dongs.
+CLI utility that makes dongs.
 """
 
 
-from mkdong import (
+from .core import (
     main,
     mkdong as dong
 )
